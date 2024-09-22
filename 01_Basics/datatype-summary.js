@@ -43,3 +43,28 @@ console.log(typeof anotherId);
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
 */
+
+
+//++++++++++++++++++++++++++++++++++++ MEMORY ++++++++++++++++++++++++++++++++++++++++++++++++//
+
+//STACK(Primitive) , HEAP(Reference)
+
+let myName = "Ravindra";
+let anotherName = myName;
+anotherName = "Bhaiyu";
+
+console.log(myName);
+console.log(anotherName);
+
+let myInfo = {
+    name : "Ravindra",
+    age : 20,
+    email : "ravindraexample@gmail.com",
+}
+
+let myInfoTwo = myInfo;
+
+myInfoTwo.age = 25;
+
+console.log(myInfo.age);
+console.log(myInfoTwo.age);
