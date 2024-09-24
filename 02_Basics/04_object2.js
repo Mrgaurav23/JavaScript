@@ -78,3 +78,31 @@ console.log(Object.entries(instaUser));
 
 //key present or not in an object
 console.log(instaUser.hasOwnProperty('isLoggedIn'));
+
+
+// +++++++++++++++++++++++++++ Object Destructing and JSON API+++++++++++++++++++
+
+const course = {
+    courseName: "Java Programming",
+    coursePrice: 999,
+    courseInstructor: "Vishu Sir",
+}
+console.log(course.courseInstructor);
+
+// Object Destructing
+const {courseInstructor:instructor} = course;
+console.log(instructor);
+
+//API
+//JSON
+// {
+//     "name" : "vidhu",
+//     "course" : "c++",
+//     "price" : "free",
+// }
+
+[
+    {},
+    {},
+    {}
+]
