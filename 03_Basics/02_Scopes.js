@@ -41,7 +41,7 @@ if(true){
 
 // ++++++++++++++++++++++Interesting+++++++++++++++++++++//
 
-console.log(three(5));
+// console.log(three(5));
 function three(num){
     return num + 1;
 }
@@ -49,5 +49,5 @@ function three(num){
 const addTwo = function(num){
     return num + 2;
 }
-console.log(addTwo(5));
+// console.log(addTwo(5));
 
