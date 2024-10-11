@@ -7,6 +7,8 @@ MDN PROMISE: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/G
 
 //Task 1 Completed.
 const promiseOne = new Promise(function(resolve,reject){
+    //Do an async task
+    //DB calls, cryptography, network
     setTimeout(function(){
         console.log("Async task 1 completed");
         resolve();
@@ -108,6 +110,30 @@ async function consumePromiseSix() {
     }
 }
 consumePromiseSix();
+
+// fetch
+async function getAllUser() {
+    try {
+        const response = await fetch("https://randomuser.me/api/");
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.log("E: Error")
+    }
+}
+
+// getAllUser();
+
+fetch("https://randomuser.me/api/")
+.then( (response) => {
+    return response.json();
+})
+.then( (data) =>{
+    console.log(data);
+})
+.catch((error)=>{
+    console.log(error);
+})
 
 
 
